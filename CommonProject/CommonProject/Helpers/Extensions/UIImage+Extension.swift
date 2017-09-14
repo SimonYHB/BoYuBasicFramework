@@ -29,4 +29,20 @@ extension UIImage{
         UIGraphicsEndImageContext()
         return img!
     }
+    
+    //纯色加边框图片生成
+    class func creatImageWithColor(size: CGSize, fillColor:UIColor, strokeColor:UIColor, lineWidth: CGFloat, cornerRadius:CGFloat) -> UIImage {
+        UIGraphicsBeginImageContext(size)
+        
+        fillColor.setFill()
+        strokeColor.setStroke()
+        let aPath = UIBezierPath.init(roundedRect: CGRect.init(x: lineWidth / 2.0, y: lineWidth / 2.0, width: size.width - lineWidth, height: size.height - lineWidth), cornerRadius: cornerRadius)
+        aPath.lineWidth = lineWidth
+        aPath.stroke()
+        aPath.fill()
+        
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image!
+    }
 }
