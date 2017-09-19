@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CDF1F671F70F02A002AD7AF /* HUD+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDF1F661F70F02A002AD7AF /* HUD+Extension.swift */; };
+		0CF330F11F70EE12003EFF5A /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF330F01F70EE12003EFF5A /* testViewController.swift */; };
 		181464FF1F611BB50010F113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181464FE1F611BB50010F113 /* AppDelegate.swift */; };
 		181465041F611BB50010F113 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181465021F611BB50010F113 /* Main.storyboard */; };
 		181465071F611BB50010F113 /* CommonProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 181465051F611BB50010F113 /* CommonProject.xcdatamodeld */; };
@@ -52,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CDF1F661F70F02A002AD7AF /* HUD+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HUD+Extension.swift"; sourceTree = "<group>"; };
+		0CF330F01F70EE12003EFF5A /* testViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 		150F1BF68687B51F2FE4C331 /* Pods-CommonProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommonProjectUITests/Pods-CommonProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		181464FB1F611BB50010F113 /* CommonProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181464FE1F611BB50010F113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 				1814652F1F6122230010F113 /* Helpers */,
 				181465401F61223F0010F113 /* Resources */,
 				181465051F611BB50010F113 /* CommonProject.xcdatamodeld */,
+				0CF330F01F70EE12003EFF5A /* testViewController.swift */,
 			);
 			path = CommonProject;
 			sourceTree = "<group>";
@@ -184,6 +189,7 @@
 		181465301F6122230010F113 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0CDF1F661F70F02A002AD7AF /* HUD+Extension.swift */,
 				181465661F6177E30010F113 /* Observable+ObjectMapper.swift */,
 				181465671F6177E30010F113 /* Response+ObjectMapper.swift */,
 				181465511F6133450010F113 /* DateFormat+Extension.swift */,
@@ -445,6 +451,7 @@
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
@@ -460,6 +467,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
@@ -620,6 +628,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CDF1F671F70F02A002AD7AF /* HUD+Extension.swift in Sources */,
 				1814655E1F613AF00010F113 /* ExampleApi.swift in Sources */,
 				1814654A1F6125FB0010F113 /* BaseViewController.swift in Sources */,
 				1814655C1F61383C0010F113 /* BasicRxMoyaProvider.swift in Sources */,
@@ -632,6 +641,7 @@
 				181465581F6133450010F113 /* UIColor+Extension.swift in Sources */,
 				181465481F6125FB0010F113 /* BaseNavigationViewController.swift in Sources */,
 				181464FF1F611BB50010F113 /* AppDelegate.swift in Sources */,
+				0CF330F11F70EE12003EFF5A /* testViewController.swift in Sources */,
 				1814654C1F612C990010F113 /* GlobalConst.swift in Sources */,
 				181465561F6133450010F113 /* DateFormat+Extension.swift in Sources */,
 				1814654F1F61333C0010F113 /* VKYReusableProtocol.swift in Sources */,

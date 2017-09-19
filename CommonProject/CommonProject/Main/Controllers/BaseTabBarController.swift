@@ -16,19 +16,19 @@ class BaseTabBarController: ESTabBarController {
         
         self.view.backgroundColor = UIColor.white
 //        
-//        let v1 = GZTDataViewController()
+        let v1 = testViewController()
 //        let v2 = GZTMessageViewController()
 //        let v3 = GZTMineViewController()
 //        
-//        v1.tabBarItem = ESTabBarItem.init(title: "数据", image: UIImage(named: "account_weixindengru"), selectedImage: UIImage(named: "account_weixindengru"))
+        v1.tabBarItem = ESTabBarItem.init(title: "数据", image: UIImage(named: "account_weixindengru"), selectedImage: UIImage(named: "account_weixindengru"))
 //        v2.tabBarItem = ESTabBarItem.init(title: "消息", image: UIImage(named: "account_weixindengru"), selectedImage: UIImage(named: "account_weixindengru"))
 //        v3.tabBarItem = ESTabBarItem.init(title: "我的", image: UIImage(named: "account_weixindengru"), selectedImage: UIImage(named: "account_weixindengru"))
 //      
-//        let n1 = BaseNavigationViewController.init(rootViewController: v1)
+        let n1 = BaseNavigationViewController.init(rootViewController: v1)
 //        let n2 = BaseNavigationViewController.init(rootViewController: v2)
 //        let n3 = BaseNavigationViewController.init(rootViewController: v3)
 //        
-//        self.viewControllers = [n1, n2, n3]
+        self.viewControllers = [n1]
         
     }
 
